@@ -131,21 +131,3 @@
     <ul>
         <li>n/a</li>
     </ul>
-
-
-<h2> ... section ... </h2>
-
-<h3>Meets Expectations</h3>
-    <ul>
-        <li> ... </li>
-        <ul>
-            <li> ... </li>
-            <li> ... </li>
-        </ul>
-    </ul>
-
-<h3>Exceeds Expectations</h3>
-    <ul>
-        <li> ... </li>
-        <li> ... </li>
-    </ul>    
