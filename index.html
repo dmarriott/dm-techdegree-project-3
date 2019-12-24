@@ -126,8 +126,8 @@ Dennis Marriott
                     <option value="YT">Yukon Territory</option>
                 </optgroup>
 
-            <label for="zipcode">Zip or Postal Code</label>
-            <input type="text" id="zipcode" name="user_zipcode">
+            <label for="zip-postal">Zip or Postal Code</label>
+            <input type="text" id="zip-postal" name="user_zip-postal">
 
         </fieldset>  <!-- end class="contact-info" -->
 
@@ -140,32 +140,30 @@ Dennis Marriott
             <p>Select the newsletters you would like to receive</p>
 
                 <label for="news-html">HTML News</label>
-                <input type="checkbox" id="news-html" name="user_news-html">
+                <input type="checkbox" id="news-html" name="user_newsletters">
 
                 <label for="news-css">CSS News</label>
-                <input type="checkbox" id="news-css" name="user_news-css">
+                <input type="checkbox" id="news-css" name="user_newsletters">
 
                 <label for="news-javascript">Javascript News</label>
-                <input type="checkbox" id="news-javascript" name="user_news-javascript">
+                <input type="checkbox" id="news-javascript" name="user_newsletters">
 
             <p>Newsletter Format</p>
 
                 <label for="format-html">HTML</label>
-                <input type="radio" id="format-html" name="user_format">
+                <input type="radio" id="format-html" name="user_newsletter-format">
 
                 <label for="format-plaintext">Plain Text</label>
-                <input type="radio" id="format-plaintext" name="user_format">
+                <input type="radio" id="format-plaintext" name="user_newsletter-format">
+
+
+            <p>Other topics you'd like to hear about</p>
+
+                <textarea id="topics" name="user_topics" placeholder="I would like to hear more about..." rows="5"></textarea>
 
         </fieldset>   <!-- end class="newsletter-options" -->
 
-        <fieldset class="comments">      
-
-            <label for="topics"></label>Other topics you'd like to hear about</label>
-                <textarea id="topics" name="user_topics" placeholder="I would like to hear more about..." rows="5"></textarea>
-
-        </fieldset>   <!-- end class="comments" -->
-
-        <input type="submit" id="submit-button" name="user_submit-button" value="Sign Up"></input>
+        <button type="submit" id="submit-button" name="user_submit-button" value="Sign Up"></button>
   
     </form>
 
