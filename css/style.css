@@ -73,6 +73,36 @@ form {
 
 
 
+/* WebKit, Edge */
+input::-webkit-input-placeholder {
+    color: rgba(15,20,24,.5)
+  }
+  /* Firefox 4-18 */
+  input:-moz-placeholder { 
+    color: rgba(150,230,179,1)
+    opacity: 1;
+  }
+  /* Firefox 19+ */
+  input::-moz-placeholder { 
+    color: rgba(150,230,179,1)
+    opacity: 1;
+  }
+  /* IE 10-11 */
+  input:-ms-input-placeholder { 
+    color: rgba(150,230,179,1)
+  }
+  /* Edge */
+  input::-ms-input-placeholder { 
+    color: rgba(150,230,179,1)
+  }
+  /* MODERN BROWSER */
+  input::placeholder { 
+    color: rgba(15,20,24,.3);
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+
 /* 
 ================================================
 subscriber contact info
