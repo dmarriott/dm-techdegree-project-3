@@ -54,7 +54,7 @@ h2 {
 }
 
 .header-bottom-line {
-    border-bottom: rgb(218,62,82,1) solid 4px;
+    border-bottom: rgb(218,62,82,1) solid 4px;   /* red  */
     margin: 0 auto .3rem;
     max-width: 90%;
 }
@@ -74,49 +74,51 @@ form {
 
 /* WebKit, Edge */
 input::-webkit-input-placeholder {
+    color: rgba(15,20,24,.5)   /*  black  */
     font-size: 1rem;
     font-style: italic;
     text-align: right;
-    color: rgba(15,20,24,.5)
+    
 }
 
 /* Firefox 4-18 */
 input:-moz-placeholder {
+    color: rgba(15,20,24,.3);   /*  black  */
     font-size: 1rem;
     font-style: italic;
     text-align: right;
-    color: rgba(15,20,24,.3);
     opacity: 1;
 }
 
 /* Firefox 19+ */
 input::-moz-placeholder {
+    color: rgba(15,20,24,.3);   /*  black  */
     font-size: 1rem;
     font-style: italic;
     text-align: right;
-    color: rgba(15,20,24,.3);
     opacity: 1;
 }
 
 /* IE 10-11 */
 input:-ms-input-placeholder {
+    color: rgba(15,20,24,.3);   /*  black  */
     font-size: 1rem;
     font-style: italic;
     text-align: right;
-    color: rgba(15,20,24,.3);
+    
 }
 
 /* Edge */
 input::-ms-input-placeholder {
+    color: rgba(15,20,24,.3);   /*  black  */
     font-size: 1rem;
     font-style: italic;
     text-align: right;
-    color: rgba(15,20,24,.3);
 }
 
 /* modern browser */
 input::placeholder {
-    color: rgba(15,20,24,.3);
+    color: rgba(15,20,24,.3);   /*  black  */
     font-size: 1rem;
     font-style: italic;
     text-align: right;
@@ -126,47 +128,46 @@ input::placeholder {
 
 /* textarea placeholders =============== */
 
-
 /* WebKit, Edge */
 textarea::-webkit-textarea-placeholder {
+    color: rgba(150,230,179,1)
     font-size: 1rem;
     font-style: italic;
     text-align: right;
-    color: rgba(150,230,179,1)
 }
 
 /* Firefox 4-18 */
 textarea:-moz-placeholder {
+    color: rgba(15,20,24,.3);
     font-size: 1rem;
     font-style: italic;
     text-align: right;
-    color: rgba(15,20,24,.3);
     opacity: 1;
 }
 
 /* Firefox 19+ */
 textarea::-moz-placeholder {
+    color: rgba(15,20,24,.3);
     font-size: 1rem;
     font-style: italic;
     text-align: right;
-    color: rgba(15,20,24,.3);
     opacity: 1;
 }
 
 /* IE 10-11 */
 textarea:-ms-textarea-placeholder {
+    color: rgba(15,20,24,.3);
     font-size: 1rem;
     font-style: italic;
     text-align: right;
-    color: rgba(15,20,24,.3);
 }
 
 /* Edge */
 textarea::-ms-textarea-placeholder {
+    color: rgba(15,20,24,.3);
     font-size: 1rem;
     font-style: italic;
     text-align: right;
-    color: rgba(15,20,24,.3);
 }
 
 /* modern browser */
@@ -215,13 +216,11 @@ select {
     font-size: 1.4rem;
     font-family: sans-serif;
     font-weight: 400;
-    /* color: #444; */
     color: rgba(107,91,149,1);  /* purple */
-    line-height: 1;
+    line-height: 1rem;
     padding: .6em 1.4em .5em .8em;
-    height: 3rem; /* added */
+    height: 3.5rem; /* added */
     width: 100%;
-    max-width: 100%;
     box-sizing: border-box;
     margin: .5rem 0 2.5rem; /* added */
     border: none;
@@ -238,40 +237,15 @@ select {
     background-size: .65em auto, 100%;
 }
 
-/* .select-state-prov::-ms-expand {
-    display: none;
-}
-
-.select-state-prov:hover {
-    border-color: greenyellow;
-}
-
-.select-state-prov:focus {
-    border-color: #aaa;
-    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-    box-shadow: 0 0 0 3px -moz-mac-focusring;
-    color: #222;
-    outline: none;
-}
-
-.select-state-prov option {
-    font-weight: normal;
-} */
-
 /* Disabled styles */
 .select-state-prov:disabled, .select-state-prov[aria-disabled=true] {
 	color: graytext;
 	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22graytext%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
 }
 
-/* .select-state-prov:disabled:hover, .select-state-prov[aria-disabled=true] {
-	border-color: #aaa;
-} */
-
 .zip-postal {
     max-width: 40%;
 }
-
 
 /*
 ================================================
@@ -321,12 +295,10 @@ button {
     border-radius: 5px;
     background: rgba(218,62,82,1);
     color: white;
-    /* color: rgba(242,233,78,1); */
     cursor: pointer;
     font-size: 2.5rem;
     font-weight: 900;
     height: 6rem;
-    /* margin: 15px auto 20px auto; */
     margin: 0 auto;
     text-align: center;
     text-decoration: none;
@@ -349,48 +321,67 @@ button:focus {
 button:active {
     transform: scale(0.95);
 }
+
+
 /*
 ================================================
 focus indicators and transition properties
 ================================================
 */
 
-/* on mouse over */
-input:hover {
-    border: rgba(218,62,82,1) solid 2px;  /*  red  */
-    background-color: rgba(218,62,82,1) solid 2px;
-    /* background-color: rgba(242,233,78,.5); */
+
+.select-state-prov::-ms-expand {
+    display: none;
 }
 
-input:focus {
-    border: rgba(218,62,82,1) solid 2px;  /*  red  */
-    /* background-color: rgba(242,233,78,.5); */
-    background-color: rgba(218,62,82,1) solid 2px;
+select:focus,
+select:hover {
+    box-shadow: 0 0 1px 3px rgba(218,62,82,.9);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: rgba(107,91,149,1);
+    outline: none;
+}
+
+select:focus {
     -webkit-transition: background-color .5s ease-out;
     -moz-transition: background-color .5s ease-out;
     -o-transition: background-color .5s ease-out;
     transition: background-color .5s ease-out;
 }
 
-select:focus {
-    border: rgba(218,62,82,1) solid 2px;  /*  red  */
-    background-color: rgba(218,62,82,1) solid 2px;
-    /* background-color: rgba(242,233,78,.5); */
+.select-state-prov option {
+    font-weight: normal;
 }
 
+.select-state-prov:disabled:hover, .select-state-prov[aria-disabled=true] {
+	border-color: #aaa;
+}
 
+input:hover,
+input:focus {
+    border: rgba(218,62,82,1) solid 2px;  /*  red  */
+}
 
+input:focus {
+    background-color: rgba(242,233,78,.5);
+    -webkit-transition: background-color .5s ease-in;
+    -moz-transition: background-color .5s ease-in;
+    -o-transition: background-color .5s ease-in;
+    transition: background-color .5s ease-in;
+}
+
+textarea:hover,
+textarea:focus {
+    border: rgba(218,62,82,1) solid 2px;
+}
 
 textarea:focus {
-    border: rgb(34, 43, 53, .95) solid 2px;
-    background-color: rgba(255, 244, 148, 0.63);
-    -webkit-transition: background-color 3s ease-out;
-    -moz-transition: background-color 3s ease-out;
-    -o-transition: background-color 3s ease-out;
-    transition: background-color 3s ease-out;
+    background-color: rgba(242,233,78,.5);
+    -webkit-transition: background-color .5s ease-in;
+    -moz-transition: background-color .5s ease-in;
+    -o-transition: background-color .5s ease-in;
+    transition: background-color .5s ease-in;
 }
-
-
 
 
 
