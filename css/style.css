@@ -15,8 +15,9 @@ html {
 }
 
 body {
-    background: rgba(150,230,179,.2);  /* light green */
-    color: rgba(15,20,24,1);  /* black */
+    background: rgba(150,230,179,.1);  /* light green */
+    color: rgba(107,91,149,1);  /* purple */
+    /* color: rgba(15,20,24,1);   black */
     font-family: "Sintony", sans-serif;
     font-size: 14px; 
     font-size: 1.4rem;
@@ -26,16 +27,34 @@ body {
 }
 
 header {
-    background: rgba(107,91,149,1);  /* purple */
+    display: block;
+    text-align: center;
 }
 
 h1 {
+    background: rgba(107,91,149,1);  /* purple */
     color: rgba(150,230,179,1);  /* light green */
-    display: block;
     font-family: "Source+Sans+Pro:900", sans-serif;
+    font-size: 3rem ;
     margin: 0 auto;
     padding: 2rem 0;
-    text-align: center;
+}
+
+h2 {
+    color: black;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 2rem 0 0;
+}
+
+p .tagline {
+    max-width: 90%;
+}
+
+.header-bottom-line {
+    border-bottom: rgb(218,62,82,1) solid 4px;
+    margin: 0 auto .3rem;
+    max-width: 90%;
 }
 
 
@@ -45,8 +64,12 @@ input form and placeholders
 ================================================ 
 */
 
-
-
+form {
+    border-top: rgb(218,62,82,1) solid 2px;  /* red  */
+    margin: 0 auto 0;
+    max-width: 90%;
+    
+}
 
 
 
@@ -56,9 +79,32 @@ subscriber contact info
 ================================================ 
 */
 
+.contact-info {
+    border: none;
+    border-bottom: rgb(218,62,82,1) solid 2px;  /* red  */
+}
 
+legend {
+    color: black;
+    font-size: 2rem;
+    padding: 2rem 0;
+}
 
+input,
+select
+      {
+        background-color: white;  /*  white  */
+        border: none;
+        color: rgba(107,91,149,1);  /* purple */
+        display: block;
+        height: 3rem;
+        margin: .5rem 0 2.5rem;
+        width: 100%;
+}
 
+.zip-postal {
+    max-width: 40%;
+}
 
 
 /* 
@@ -67,9 +113,20 @@ newsletter signup
 ================================================ 
 */
 
+.newsletter-options {
+    border: none;
+}
 
+textarea .newsletter-options { 
+    background-color: white;  /*  white  */
+    color: rgba(107,91,149,1);  /* purple */
+}
 
-
+p .cta-select-newsletters {
+    max-width: 90%;
+    text-align: left;
+    padding: 0 0 2rem 0;
+}
 
 /* 
 ================================================
