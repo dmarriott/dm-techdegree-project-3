@@ -91,15 +91,20 @@ legend {
 }
 
 input,
-select
-      {
+select .contact-info {
         background-color: white;  /*  white  */
         border: none;
         color: rgba(107,91,149,1);  /* purple */
-        display: block;
         height: 3rem;
         margin: .5rem 0 2.5rem;
         width: 100%;
+}
+
+#state-prov {
+    display: block;
+    height: 3rem;
+    margin: .5rem 0 2.5rem;
+    width: 100%;
 }
 
 .zip-postal {
