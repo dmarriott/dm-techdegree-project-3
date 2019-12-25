@@ -410,19 +410,29 @@ media query min-width 768px
 ================================================
 */
 
+@media (min-width: 768px) {
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info,
+.newsletter-options {
+    display: inline-block;
+    align-self: flex-end;
+    max-width: 768px;
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+}
+
+}
 
 
-
-
-
-
-/*
-================================================
-================================================
-media query min-width 1024px
-================================================
-================================================
-*/
 
 
 
