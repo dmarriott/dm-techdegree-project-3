@@ -46,19 +46,24 @@ h2 {
     font-size: 20px;
     font-size: 2rem;
     margin: 0 auto;
-    padding: 2rem 0 0;
+    padding: 2rem 1rem;
 }
 
-.tagline p {
-    max-width: 90%;
+.flex-container {
+    display: flex;
+    flex-direction: column;
 }
+
+.tagline {
+    padding: 0 1rem 0;
+}
+
 
 .header-bottom-line {
     border-bottom: rgb(218,62,82,1) solid 4px;   /* red  */
     margin: 0 auto .3rem;
     max-width: 90%;
 }
-
 
 /*
 ================================================
@@ -70,15 +75,15 @@ form {
     border-top: rgba(218,62,82,1) solid 2px;  /* red  */
     margin: 0 auto 0;
     max-width: 90%;
+    padding: 0 .5rem 0;
 }
 
 /* WebKit, Edge */
 input::-webkit-input-placeholder {
-    color: rgba(15,20,24,.5)   /*  black  */
+    color: rgba(15,20,24,.5);   /*  black  */
     font-size: 1rem;
     font-style: italic;
     text-align: right;
-    
 }
 
 /* Firefox 4-18 */
@@ -105,7 +110,6 @@ input:-ms-input-placeholder {
     font-size: 1rem;
     font-style: italic;
     text-align: right;
-    
 }
 
 /* Edge */
@@ -130,7 +134,7 @@ input::placeholder {
 
 /* WebKit, Edge */
 textarea::-webkit-textarea-placeholder {
-    color: rgba(150,230,179,1)
+    color: rgba(150,230,179,1);
     font-size: 1rem;
     font-style: italic;
     text-align: right;
@@ -304,7 +308,7 @@ button {
     text-decoration: none;
     padding: 1rem 2rem;
     width: 95%;
-    max-width: 500px;
+    max-width: 630px;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
@@ -412,32 +416,53 @@ media query min-width 768px
 
 @media (min-width: 768px) {
 
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    .header-bottom-line {
+        max-width: 630px;
+    }
+
+    .flex-container {
+        align-items: center;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+
+    .zip-postal {
+        display: flex;
+        max-width: 60%;
+    }
+
+    .contact-info-row {
+        display: flex;
+        justify-content: flex-end;
+        width: 700px;
+    }
+
+    /* .zip-postal {
+        display: flex;
+        justify-content: flex-start;
+        width: 700px;
+    } */
+
+    .contact-info-row label,
+    .zip-postal label {
+        flex: 1;
+        padding-top: 1rem;
+    }
+
+    .contact-info-row input {
+        flex: 2;
+    }
+
+    .zip-postal label {
+        padding-right: 60px;
+    }
+
+    .zip-postal input {
+        flex: 1;
+    }
+
+    .contact-info-row select {
+        flex: 2;
+    }
+
 }
-
-.contact-info,
-.newsletter-options {
-    display: inline-block;
-    align-self: flex-end;
-    max-width: 768px;
-}
-
-form {
-    display: flex;
-    justify-content: space-around;
-}
-
-}
-
-
-
-
-
-
-
-
-
-

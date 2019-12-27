@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- 
+<!--
+=================================================
 Treehouse Techdegree - Front End Web Development
 Project 3: An Online Registration Form
 Dennis Marriott
 2019-December
+=================================================
 -->
 
 <head>
@@ -26,158 +28,174 @@ Dennis Marriott
         <p class="tagline">Get the latest news on how your code is doing right in your inbox</p>
         <div class="header-bottom-line"></div>
     </header>
-    
-    <form action="https://mysite.com" method="post">
 
-        <fieldset class="contact-info">
+    <div class="flex-container">
 
-            <legend>Contact Information</legend>
+        <form action="https://mysite.com" method="post">
 
-            <label for="fullname">Full name</label>
-            <input type="text" id="fullname" name="user_fullname" placeholder=" required - first and last name" required>
+            <fieldset class="contact-info">
 
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="user_email" placeholder=" required - to receive newsletters" required>
+                <legend>Contact Information</legend>
 
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="user_phone" placeholder=" e.g. 000 000 0000">
-
-            <label for="street">Street Address</label>
-            <input type="text" id="street" name="user_street" placeholder=" e.g. 123 Main St">
-
-            <label for="city">City</label>
-            <input type="text" id="city" name="user_city" placeholder=" e.g. Anytown">
-
-            <label for="state-prov">State or Province</label>
-            <select class="select-state-prov" id="state-prov" name="user_state" placeholder=" pick from list">
-                <option value="" disabled selected>Choose from list</option>
-                <optgroup label="US States and Territories">
-                    <option value="AK">Alaska</option>
-                    <option value="AL">Alabama</option>
-                    <option value="AR">Arkansas</option>
-                    <option value="AZ">Arizona</option>
-                    <option value="CA">California</option>
-                    <option value="CO">Colorado</option>
-                    <option value="CT">Connecticut</option>
-                    <option value="DC">District of Columbia</option>
-                    <option value="DE">Delaware</option>
-                    <option value="FL">Florida</option>
-                    <option value="GA">Georgia</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="IA">Iowa</option>
-                    <option value="ID">Idaho</option>
-                    <option value="IL">Illinois</option>
-                    <option value="IN">Indiana</option>
-                    <option value="KS">Kansas</option>
-                    <option value="KY">Kentucky</option>
-                    <option value="LA">Louisiana</option>
-                    <option value="MA">Massachusetts</option>
-                    <option value="MD">Maryland</option>
-                    <option value="ME">Maine</option>
-                    <option value="MI">Michigan</option>
-                    <option value="MN">Minnesota</option>
-                    <option value="MO">Missouri</option>
-                    <option value="MS">Mississippi</option>
-                    <option value="MT">Montana</option>
-                    <option value="NC">North Carolina</option>
-                    <option value="ND">North Dakota</option>
-                    <option value="NE">Nebraska</option>
-                    <option value="NH">New Hampshire</option>
-                    <option value="NJ">New Jersey</option>
-                    <option value="NM">New Mexico</option>
-                    <option value="NV">Nevada</option>
-                    <option value="NY">New York</option>
-                    <option value="OH">Ohio</option>
-                    <option value="OK">Oklahoma</option>
-                    <option value="OR">Oregon</option>
-                    <option value="PA">Pennsylvania</option>
-                    <option value="PR">Puerto Rico</option>
-                    <option value="RI">Rhode Island</option>
-                    <option value="SC">South Carolina</option>
-                    <option value="SD">South Dakota</option>
-                    <option value="TN">Tennessee</option>
-                    <option value="TX">Texas</option>
-                    <option value="UT">Utah</option>
-                    <option value="VA">Virginia</option>
-                    <option value="VT">Vermont</option>
-                    <option value="WA">Washington</option>
-                    <option value="WI">Wisconsin</option>
-                    <option value="WV">West Virginia</option>
-                    <option value="WY">Wyoming</option>
-                </optgroup>
-                <optgroup label="Canadian Provinces">
-                    <option value="AB">Alberta</option>
-                    <option value="BC">British Columbia</option>
-                    <option value="MB">Manitoba</option>
-                    <option value="NB">New Brunswick</option>
-                    <option value="NF">Newfoundland</option>
-                    <option value="NT">Northwest Territories</option>
-                    <option value="NS">Nova Scotia</option>
-                    <option value="NU">Nunavut</option>
-                    <option value="ON">Ontario</option>
-                    <option value="PE">Prince Edward Island</option>
-                    <option value="QC">Quebec</option>
-                    <option value="SK">Saskatchewan</option>
-                    <option value="YT">Yukon Territory</option>
-                </optgroup>
-            </select>
-
-                <div class="zip-postal">
-                    <label for="zip-postal">Zip or Postal Code</label>
-                    <input type="text" id="zip-postal" name="user_zip-postal" placeholder=" e.g. 00000 or X0X 0X0">
+                <div class="contact-info-row">
+                    <label for="fullname">Full name</label>
+                    <input type="text" id="fullname" name="user_fullname" placeholder=" required - first and last name" required>
                 </div>
 
-        </fieldset>  <!-- end class="contact-info" -->
-
-        <fieldset class="newsletter-options">
-
-            <legend>Newsletter</legend>
-
-            <p class="cta-select-newsletters">Select the newsletters you would like to receive</p>
-
-                <div>
-                    <input type="checkbox" id="news-html" name="user_newsletters">
-                    <label for="news-html">HTML News</label>
+                <div class="contact-info-row">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="user_email" placeholder=" required - to receive newsletters" required>
                 </div>
 
-                <div>
-                    <input type="checkbox" id="news-css" name="user_newsletters">
-                    <label for="news-css">CSS News</label>
+                <div class="contact-info-row">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="user_phone" placeholder=" e.g. 000 000 0000">
                 </div>
 
-                <div>
-                    <input type="checkbox" id="news-javascript" name="user_newsletters">
-                    <label for="news-javascript">Javascript News</label>
+                <div class="contact-info-row">
+                    <label for="street">Street Address</label>
+                    <input type="text" id="street" name="user_street" placeholder=" e.g. 123 Main St">
                 </div>
 
-            <p>Newsletter Format</p>
-
-                <div>
-                    <input type="radio" id="format-html" name="user_newsletter-format">
-                    <label for="format-html">HTML</label>
+                <div class="contact-info-row">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="user_city" placeholder=" e.g. Anytown">
                 </div>
 
-                <div>
-                    <input type="radio" id="format-plaintext" name="user_newsletter-format">
-                    <label for="format-plaintext">Plain Text</label>
+                <div class="contact-info-row">
+                    <label for="state-prov">State or Province</label>
+                    <select class="select-state-prov" id="state-prov" name="user_state" placeholder=" pick from list">
+                        <option value="" disabled selected>Choose from list</option>
+                        <optgroup label="US States and Territories">
+                            <option value="AK">Alaska</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DC">District of Columbia</option>
+                            <option value="DE">Delaware</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="IA">Iowa</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MD">Maryland</option>
+                            <option value="ME">Maine</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MT">Montana</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NY">New York</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="PR">Puerto Rico</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VA">Virginia</option>
+                            <option value="VT">Vermont</option>
+                            <option value="WA">Washington</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WY">Wyoming</option>
+                        </optgroup>
+                        <optgroup label="Canadian Provinces">
+                            <option value="AB">Alberta</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NF">Newfoundland</option>
+                            <option value="NT">Northwest Territories</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="NU">Nunavut</option>
+                            <option value="ON">Ontario</option>
+                            <option value="PE">Prince Edward Island</option>
+                            <option value="QC">Quebec</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="YT">Yukon Territory</option>
+                        </optgroup>
+                    </select>
                 </div>
 
-            <p>Other topics you'd like to hear about</p>
+                    <div class="zip-postal">
+                        <label for="zip-postal">Zip or Postal Code</label>
+                        <input type="text" id="zip-postal" name="user_zip-postal" placeholder=" e.g. 00000 or X0X 0X0">
+                    </div>
 
-                <textarea id="topics" name="user_topics" placeholder="Tell us what you would like to hear more about" rows="5"></textarea>
+            </fieldset>  <!-- end class="contact-info" -->
 
-        </fieldset>   <!-- end class="newsletter-options" -->
+            <fieldset class="newsletter-options">
 
-        <button type="submit" id="submit-button" name="user_submit-button" value="Sign Up">Sign Up</button>
-  
-    </form>
+                <legend>Newsletter</legend>
 
-    <footer>
+                <p class="cta-select-newsletters">Select the newsletters you would like to receive</p>
 
-        <p>&copy; The Code Review</p>
+                    <div>
+                        <input type="checkbox" id="news-html" name="user_newsletters">
+                        <label for="news-html">HTML News</label>
+                    </div>
 
-    </footer>
-     
+                    <div>
+                        <input type="checkbox" id="news-css" name="user_newsletters">
+                        <label for="news-css">CSS News</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="news-javascript" name="user_newsletters">
+                        <label for="news-javascript">Javascript News</label>
+                    </div>
+
+                <p>Newsletter Format</p>
+
+                    <div>
+                        <input type="radio" id="format-html" name="user_newsletter-format">
+                        <label for="format-html">HTML</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="format-plaintext" name="user_newsletter-format">
+                        <label for="format-plaintext">Plain Text</label>
+                    </div>
+
+                <p>Other topics you'd like to hear about</p>
+
+                    <textarea id="topics" name="user_topics" placeholder="Tell us what you would like to hear more about" rows="5"></textarea>
+
+            </fieldset>   <!-- end class="newsletter-options" -->
+
+            <button type="submit" id="submit-button" name="user_submit-button" value="Sign Up">Sign Up</button>
+
+        </form>
+
+        <footer>
+
+            <p>&copy; The Code Review</p>
+
+        </footer>
+
+    </div>  <!-- end class=class="flex-container" -->
+
 </body>
 
 </html>
