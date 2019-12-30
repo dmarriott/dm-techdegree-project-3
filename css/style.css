@@ -46,24 +46,26 @@ h2 {
     font-size: 20px;
     font-size: 2rem;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 0;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    align-self: auto;
-    margin: 0 auto;
-}
 
 .tagline {
-    padding: 0 1rem 0;
+    padding: 0 1.5rem 0;
 }
-
 
 .header-bottom-line {
     border-bottom: rgb(218,62,82,1) solid 4px;   /* red  */
     margin: 0 auto .3rem;
+    max-width: 90%;
+}
+
+.flex-container {
+    border-top: rgb(218,62,82,1) solid 2px;  /* red  */
+    display: flex;
+    flex-direction: column;
+    align-self: auto;
+    margin: 0 auto;
     max-width: 90%;
 }
 
@@ -74,12 +76,16 @@ input form and placeholders
 */
 
 form {
-    border-top: rgba(218,62,82,1) solid 2px;  /* red  */
-    max-width: 90%;
     align-self: center;
-    /* margin: 0 auto; */
-    padding: 0 .5rem 0;
+    max-width: 100%;
+    width: 100%;
 }
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+  }
 
 /* WebKit, Edge */
 input::-webkit-input-placeholder {
@@ -140,7 +146,7 @@ textarea::-webkit-textarea-placeholder {
     color: rgba(150,230,179,1);
     font-size: 1rem;
     font-style: italic;
-    text-align: right;
+    text-align: left;
 }
 
 /* Firefox 4-18 */
@@ -148,7 +154,7 @@ textarea:-moz-placeholder {
     color: rgba(15,20,24,.5);
     font-size: 1rem;
     font-style: italic;
-    text-align: right;
+    text-align: left;
     opacity: 1;
 }
 
@@ -157,7 +163,7 @@ textarea::-moz-placeholder {
     color: rgba(15,20,24,.5);
     font-size: 1rem;
     font-style: italic;
-    text-align: right;
+    text-align: left;
     opacity: 1;
 }
 
@@ -166,7 +172,7 @@ textarea:-ms-textarea-placeholder {
     color: rgba(15,20,24,.5);
     font-size: 1rem;
     font-style: italic;
-    text-align: right;
+    text-align: left;
 }
 
 /* Edge */
@@ -174,7 +180,7 @@ textarea::-ms-textarea-placeholder {
     color: rgba(15,20,24,.5);
     font-size: 1rem;
     font-style: italic;
-    text-align: right;
+    text-align: left;
 }
 
 /* modern browser */
@@ -183,7 +189,7 @@ textarea::placeholder {
     font-size: 1rem;
     font-style: italic;
     padding-left: 1rem;
-    text-align: right;
+    text-align: left;
 }
 
 /*
@@ -195,6 +201,7 @@ subscriber contact info
 .contact-info {
     border: none;
     border-bottom: rgb(218,62,82,1) solid 2px;  /* red  */
+    width: 100%;
 }
 
 legend {
@@ -213,7 +220,7 @@ select {
         color: rgba(107,91,149,1);  /* purple */
         height: 3rem;
         margin: .5rem 0 2.5rem;
-        padding: .6em 1.4em .5em .8em;
+        padding: .6rem .8rem .5rem .8rem;
         width: 100%;
 }
 
@@ -225,7 +232,7 @@ select {
     font-weight: 400;
     color: rgba(107,91,149,1);  /* purple */
     line-height: 1rem;
-    padding: .6em 1.4em .5em .8em;
+    /* padding: .6em 1.4em .5em .8em; */
     height: 3.5rem; /* added */
     width: 100%;
     box-sizing: border-box;
@@ -267,7 +274,7 @@ newsletter signup
 .cta-select-newsletters {
     margin-block-start: 0;
     margin-block-end: 0;
-    max-width: 90%;
+    max-width: 100%;
     text-align: left;
     padding: 0 0 2rem 0;
 }
@@ -420,7 +427,7 @@ media query min-width 768px
 @media (min-width: 768px) {
 
     .header-bottom-line {
-        max-width: 630px;
+        max-width: 700px;
     }
 
     .flex-container {
@@ -439,12 +446,6 @@ media query min-width 768px
         justify-content: flex-end;
         width: 700px;
     }
-
-    /* .zip-postal {
-        display: flex;
-        justify-content: flex-start;
-        width: 700px;
-    } */
 
     .contact-info-row label,
     .zip-postal label {
