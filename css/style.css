@@ -232,7 +232,6 @@ select {
     font-weight: 400;
     color: rgba(107,91,149,1);  /* purple */
     line-height: 1rem;
-    /* padding: .6em 1.4em .5em .8em; */
     height: 3.5rem; /* added */
     width: 100%;
     box-sizing: border-box;
@@ -327,7 +326,7 @@ button {
     text-decoration: none;
     padding: 1rem 2rem;
     width: 95%;
-    max-width: 630px;
+    max-width: 700px;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
@@ -476,6 +475,10 @@ media query min-width 768px
 
     .contact-info-row select {
         flex: 3;
+    }
+
+    button {
+        width: 97%;
     }
 
 }
