@@ -454,7 +454,7 @@ media query min-width 768px
     }
 
     .contact-info-row input {
-        flex: 2;
+        flex: 3;
     }
 
     .zip-postal label {
@@ -462,11 +462,11 @@ media query min-width 768px
     }
 
     .zip-postal input {
-        flex: 1;
+        flex: 2;
     }
 
     .contact-info-row select {
-        flex: 2;
+        flex: 3;
     }
 
 }
