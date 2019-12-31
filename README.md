@@ -2,7 +2,7 @@
 <h1>Team Treehouse Project 3 - mobile-first responsive layout</h1>
 <a href="https://teamtreehouse.com/"></a>
 
-<p>Dennis Marriott - November 2019</p>
+<p>Dennis Marriott - December 2019</p>
 <p>Going for an Exceeds Expectations grade</p>
 
 <h2>Assignment overview</h2>
